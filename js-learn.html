@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn</title>
+  <style>
+    body {
+      font-size: 50px;
+    }
+    .added {
+      /* color: red;
+      background-color: #ddd;
+      padding: 100px; */
+      background-color: red;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="class" id="iden">
+    Hello!
+  </div>
+</body>
+
+  <script type="text/javascript">
+    //const firstEl = document.getElementById("iden");
+    //const firstEl = document.getElementByClassName("class");
+    const firstEl = document.querySelector("div");
+    //irstEl.innerText = "i'm here!";
+    firstEl.innerHTML = "I'm <strong> here </strong>!";
+    firstEl.classList.add("added");
+
+    const body = document.querySelector("body");
+    body.innerHTML += "<div class='added'> added </div>";
+
+    const newEl  = document.createElement("div");
+    newEl.innerText = "i'm tut";
+    newEl.classList.add("added");
+    body.appendChild(newEl);
+
+  </script>
+
+</html>
